@@ -4,3 +4,6 @@
     * [Week 7](/learning/week7/index.md)
         * [Click](/learning/week7/jquery-click.md)
         * [Form](/learning/week7/jquery-form.md)
+        * [Load](/learning/week7/jquery-load.md)
+        * [Pokemon](/learning/week7/pokemon.md)
+        * [Pokemon (Form)](/learning/week7/pokemon-form.md)
