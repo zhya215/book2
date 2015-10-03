@@ -10,10 +10,27 @@ with the front-end code (event handlers ... etc).
 
 ## Menu
 
+### One attribute
 
 <div style="border:1px grey solid; padding:5px;">
 Attribute (e.g., Attack): <input id="pokemon-attribute-name" type="text" value="Attack"/>
 <button id="viz-horizontal">Horizontal Bars</button>
+</div>
+
+### Comparing two attributes
+
+<div style="border:1px grey solid; padding:5px;">
+Attribute 1: <input id="pokemon-attribute-name-1" type="text" value="Attack"/>
+Attribute 2: <input id="pokemon-attribute-name-2" type="text" value="Attack"/>
+<button id="viz-compare">Compare Side-by-Side</button>
+</div>
+
+### One attribute with sorting
+
+<div style="border:1px grey solid; padding:5px;">
+Attribute: <input id="pokemon-sorted-attribute-name" type="text" value="Attack"/>
+<button id="viz-horizontal-sorted-asc">Ascending</button>
+<button id="viz-horizontal-sorted-desc">Descending</button>
 </div>
 
 ## Viz
@@ -92,5 +109,31 @@ $('button#viz-horizontal').click(function(){
     var attributeName = 'Attack'
     vizAsHorizontalBars(attributeName)
 })  
+
+
+// TODO: complete the code below
+
+function vizSideBySide(attributeName1, attributeName2){
+
+}
+
+$('button#viz-horizontal').click(function(){    
+    var attributeName1 = 'TODO'
+    var attributeName2 = 'TODO'
+    vizSideBySide(attributeName1, attributeName2)
+})  
+
+// TODO: complete the code below
+
+function vizAsSortedHorizontalBars(attributeName, sortDirection){
+
+}
+
+$('button#viz-horizontal').click(function(){    
+    var attributeName = 'TODO'
+    var sortDirection = 'TODO'
+    vizAsSortedHorizontalBars(attributeName, sortDirection)
+})  
+
 
 {% endscript %}
