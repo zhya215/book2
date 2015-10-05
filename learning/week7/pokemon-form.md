@@ -1,12 +1,8 @@
-# Pokemon
+# Pokemon Form
 
-Create interactive visualizations for the Pokemon data. Complete the script
-so that when a user clicks on each menu button, there will be a different
-bar chart shown in the Viz block.
-
-You will be reusing the code you wrote for generating SVG bar charts a couple weeks
-ago. The main challenge is to figure out how to connect your visualization code
-with the front-end code (event handlers ... etc).
+In the previous page, the selection of which attributes to visualize were
+hard coded. Let's make our viz more interactive and flexible by providing
+forms for users to select which attributes to visualize dynamically.
 
 ## Menu
 
@@ -31,6 +27,15 @@ Attribute 2: <input id="pokemon-attribute-name-2" type="text" value="Attack"/>
 Attribute: <input id="pokemon-sorted-attribute-name" type="text" value="Attack"/>
 <button id="viz-horizontal-sorted-asc">Ascending</button>
 <button id="viz-horizontal-sorted-desc">Descending</button>
+</div>
+
+### Three attributes
+
+<div style="border:1px grey solid; padding:5px;">
+Width 1: <input id="pokemon-three-width1" type="text" value="Attack"/>
+Width 2: <input id="pokemon-three-width2" type="text" value="Defense"/>
+Color: <input id="pokemon-three-color" type="text" value="Speed"/>
+<button id="viz-three">Viz Three Attributes</button>
 </div>
 
 ## Viz
@@ -133,6 +138,21 @@ $('button#viz-horizontal').click(function(){
     var attributeName = 'TODO'
     var sortDirection = 'TODO'
     vizAsSortedHorizontalBars(attributeName, sortDirection)
+})  
+
+// TODO: complete the code below
+// visualize three attributes, the first two attributes as side-by-side bar charts
+// using bar widths to represent attribute values, and the third attribute's value
+// is represented using the red color brightness
+function vizThreeAttributes(attributeName1, attributeName2, attributeName3){
+
+}
+
+$('button#viz-three').click(function(){    
+    var attributeName1 = 'TODO'
+    var attributeName2 = 'TODO'
+    var attributeName3 = 'TODO'    
+    vizThreeAttributes(attributeName1, attributeName2, attributeName3)
 })  
 
 

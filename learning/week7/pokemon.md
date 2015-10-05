@@ -16,6 +16,7 @@ with the front-end code (event handlers ... etc).
 <button id="viz-speed-defense">Speed vs. Defense</button>
 <button id="viz-horizontal-sorted">Attack (sorted from low to high)</button>
 <button id="viz-horizontal-sorted-desc">Attack (sorted from high to low)</button>
+<button id="viz-attack-speed">Attack (width) vs. Speed (color)</button>
 
 ## Viz
 
@@ -109,5 +110,9 @@ $('button#viz-horizontal').click(vizAsHorizontalBars)
 
 // TODO: add code to visualize the attack points in descending order as a
 // series of horizontal bar charts (with labels)
+
+// TODO: add code to visualize the attack points as a series of horizontal bar
+// charts (with labels), and using the brightness of red to represent defense
+// points
 
 {% endscript %}

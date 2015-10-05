@@ -2,8 +2,12 @@
 
 * [Learning](learning/index.md)
     * [Week 7](/learning/week7/index.md)
+        * [NetApp](/learning/week7/netapp.md)
         * [Click](/learning/week7/jquery-click.md)
         * [Form](/learning/week7/jquery-form.md)
         * [Load](/learning/week7/jquery-load.md)
         * [Pokemon](/learning/week7/pokemon.md)
         * [Pokemon (Form)](/learning/week7/pokemon-form.md)
+        * [FCQ](/learning/week7/fcq.md)
+* [Hackathons](hackathons/index.md)
+    * [NetApp](hackathons/netapp/index.md)
