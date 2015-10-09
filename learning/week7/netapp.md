@@ -9,38 +9,39 @@ Tableau
 # Authors
 
 This report is prepared by
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
+* [Caleb Hsu](https://github.com/calebhsu/)
+* [Andrew Linenfelser](https://github.com/Linenfelser)
+* [Zhili Yang](https://github.com/zhya215)
+* [Andrey Shprengel](https://github.com/AndreyShprengel)
+* [Andrew Berumen](https://github.com/anbe6083)
 
-# (Question)
+# What is the distribution of the most common delta times per bin?
 
-(answer)
+![screenshot](dist.png)
+Each bin is of size 80,000
+# What are the outliers when comparing max and min delta times? 
 
-# (Question)
+![screenshot](Scatterplot.png)
 
-(answer)
+# Which release did the worst job?
 
-# (Question)
+![screenshot](worstJob.png)
 
-(answer)
+# Are delta times consistent across serial numbers?
 
-# (Question)
+![screenshot](systemdelta.PNG)
 
-(answer)
+# How much useable data (+/- 1 hour) is there?
 
-# (Question)
-
-(answer)
+![screenshot](usable.png)
 
 # Further Analysis
 
 Our team determines the following questions are too complex for Tableau and
 require custom scripts to be written.
 
-* (Question)
-* (Question)
-* (Question)
-* (Question)
+* (Pick out the system serial numbers that have useable data and return the ones that have consistently accurate data)
+* Determine an error range for acceptable delta times to indicate whether a system is reporting according to standards or not.
+* Determine the proportion of usable delta time in each release.
+* Determine the trend of delta times over time for specific systems
+* Determine the cause of poor delta times, whether it be the release, FW version, SW version or controllers
