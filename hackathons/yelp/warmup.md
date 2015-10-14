@@ -69,14 +69,24 @@ function viz(arg1, arg2, arg3){
     }
 
     // TODO: group items based on the attribute specified by users
-
-    var groups = _.groupBy(items, 'stars')
+    var groups = _.groupBy(items, arg1)
     console.log('groups', groups)
 
     var pairs = _.pairs(groups)
 
-    // TODO: sort pairs in the order specified by users
+    console.log('pairs:',pairs)
 
+    // TODO: sort pairs in the order specified by users
+    if(arg2 === 'ascending'){
+        pairs=_.sortBy(pairs, function(d){
+                return d[0]
+            })
+    }
+    else if( arg2 === 'descending'){
+        pairs=_.sortBy(pairs, function(d){
+                return d[0]
+            }).reverse()
+    }
     var viz = _.map(pairs, function(d, i){                
                 return {
                     x: computeX(d, i),
@@ -98,8 +108,8 @@ function viz(arg1, arg2, arg3){
 }
 
 $('button#viz').click(function(){    
-    var arg1 = 'TODO'
-    var arg2 = 'TODO'
+    var arg1 = $('input#arg1').val()
+    var arg2 = $('input#arg2').val()
     var arg3 = 'TODO'    
     viz(arg1, arg2, arg3)
 })  
