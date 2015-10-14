@@ -46,13 +46,13 @@ function viz(arg1, arg2, arg3){
 
     // define a template string
     var tplString = '<g transform="translate(0 ${d.y})"> \
-                    <text y="20" x="${d.labelX}">${d.label}</text> \
                     <rect x="30"   \
                          width="${d.width}" \
                          height="20"    \
                          style="fill:${d.color};    \
                                 stroke-width:3; \
                                 stroke:rgb(0,0,0)" />   \
+                    <text y="20" x="${d.labelX}">${d.label}</text> \
                     </g>'
 
     // compile the string to get a template function
@@ -63,7 +63,7 @@ function viz(arg1, arg2, arg3){
     }
 
     function computeWidth(d, i) {        
-        return d.size*1.5
+        return d.size
     }
 
     function computeY(d, i) {
@@ -79,7 +79,7 @@ function viz(arg1, arg2, arg3){
     }
 
     function computeLabelX(d, i){
-        return d.size*1.5+40
+        return 40
     }
 
     // TODO: modify the logic here based on your UI
@@ -102,7 +102,7 @@ function viz(arg1, arg2, arg3){
             return  {
                 city: p[0],
                 businesses: _.filter(p[1], function(b){
-                    return b['stars'] == parseFloat(arg2) && b['review_count'] >= parseInt(arg2)
+                    return b['stars'] >= parseFloat(arg2) && b['review_count'] >= parseInt(arg1)
                 })}
     })
     console.log('city filter:', filter_city)
@@ -147,8 +147,8 @@ $('button#viz').click(function(){
 # Authors
 
 This UI is developed by
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
+* [Caleb Hsu](https://github.com/calebhsu/)
+* [Andrew Linenfelser](https://github.com/Linenfelser)
+* [Zhili Yang](https://github.com/zhya215)
+* [Andrey Shprengel](https://github.com/AndreyShprengel)
+* [Andrew Berumen](https://github.com/anbe6083)
